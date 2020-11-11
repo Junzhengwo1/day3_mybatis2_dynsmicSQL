@@ -87,7 +87,7 @@ public class MybatisCRODTest {
     public void testFindByCondition(){
         User user=new User();
         user.setUsername("老王");
-
+        user.setSex("女");
         List<User> users = userDao.findUserByCondition(user);
         for (User user1 : users) {
             System.out.println(user1);

@@ -31,11 +31,11 @@
         select *from user
         <where>
             <if test="username != null">
-                and username=#{username};
+                 username=#{username}
             </if>
 
             <if test="sex!=null">
-                and sex=#{sex};
+                and sex=#{sex}
             </if>
 
         </where>
